@@ -202,3 +202,51 @@ header {
   border-bottom: 2px solid #e67e22;
 }
 
+/* ------------------------------- */
+/* FEATURES */
+/* ------------------------------- */
+.section-features .long-copy {
+  padding: 30px;
+}
+
+
+/* ------------------------------- */
+/* MEALS */
+/* ------------------------------- */
+.section-meals {
+  padding: 0;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.meal-photo {
+  width: 100%;
+  /* means it has exact width as its parent */
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  /* make this container bgcolor dark and add opacity on img */
+}
+
+.meal-photo img {
+  width: 100%;
+  /* to assure that the image will be as wide as its container which is li element */
+  height: auto;
+  transform: scale(1.15);
+  /* the img will be 115% big */
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0.7;
+}
+
+.meal-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
