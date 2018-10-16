@@ -1,0 +1,189 @@
+/* from big tablets to 1200px (widths smaller than the 1140 px row */
+@media only screen and (max-width: 1200px) {
+
+  /* paste and change to the value we want */
+  .hero-text-box {
+    position: absolute;
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .row {
+    padding: 0 2%
+  }
+
+}
+
+/* Small tablet to big tablet from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+
+  /* so the base font-size will reduce from 20px to 18px, this is why we define our font-size in % */
+  section {
+    padding: 60px 0;
+  }
+
+  .long-copy {
+    line-height: 145%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .steps-box {
+    margin-top: 40px;
+  }
+
+  .steps-box:last-child {
+    margin-top: 10px;
+  }
+
+  .works-step {
+    margin-bottom: 40px;
+  }
+
+  .works-step:last-of-type {
+    margin-bottom: 60px;
+  }
+
+  .app-screen {
+    width: 52%
+  }
+
+  .icon-small {
+    width: 17px;
+    margin-right: 6px;
+  }
+
+  .cities-fearture {
+    font-size: 90%;
+  }
+
+  .plan-box {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .plan-price {
+    font-size: 250%;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+}
+
+
+
+/* phones bigger than small phones but smaller than iPad which is 768 px 
+from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  /* we can notice that the website can move horizontally that's because some text go outside the actual width */
+  /* solution is add overflow-x: hidden to html and body */
+
+  body {
+    font-size: 16px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .row,
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  /* the column will not be side by side but on top of each other  */
+  .col {
+    width: 100%;
+    margin: 0 0 4.7% 0;
+
+  }
+
+  /* hide all navigation as we will build navigation for mobile phone */
+  .main-nav { display: none; }
+  .main-nav {
+    float: left;
+    margin-top: 35px;
+    margin-left: 25px;
+  }
+
+  .mobile-nav-icon {
+    display: inline-block;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 15px 0;
+    font-size: 120%;
+  }
+
+
+  .sticky .main-nav {
+    margin-top: 10px;
+  }
+
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 18px 0;
+    font-size: 120%;
+  }
+
+  .sticky .mobile-nav-icon i { color: #555; } }
+  .sticky .mobile-nav-icon { margin-top: 8px; } 
+
+
+  h1 {
+    font-size: 180%;
+  }
+
+  h2 {
+    font-size: 150%;
+  }
+
+  .long-copy {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .app-screen {
+    width: 40%;
+  }
+
+  .works-step div {
+    font-size: 120%;
+    height: 40px;
+    width: 40px;
+    padding: 4px;
+    margin-right: 15px;
+  }
+
+  .works-step {
+    margin-bottom: 42px;
+  }
+
+  .works-step:last-of-type {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* small phones from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  section {
+    padding: 25px 0;
+  }
+
+  .section-form {
+    width: 100%;
+  }
+}
